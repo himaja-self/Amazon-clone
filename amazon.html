@@ -58,9 +58,10 @@
     <div class="main">
       <div class="products-grid js-products-grid"></div>
     </div>
+    <!-- This process can cause naming conflict like if cart is present in cart.js we can't declare another variable with same name again. -->
+    <!-- <script src="data/cart.js"></script> this is not needed when we use modules --> 
+    <!-- <script src="/javascript-amazon-project/data/products.js"></script> -->
+    <script type="module" src="/javascript-amazon-project/scripts/amazon.js"></script> <!--Entry point for js code-->
 
-    <script src="data/cart.js"></script>
-    <script src="/javascript-amazon-project/data/products.js"></script>
-    <script src="/javascript-amazon-project/scripts/amazon.js"></script>
   </body>
 </html>

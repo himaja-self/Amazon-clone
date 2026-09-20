@@ -55,3 +55,17 @@ export function totalCartItems() {
   });
   return total;
 }
+
+export function updateDeliveryOption(productId, deliveryOptionId) {
+  let matchingProd;
+
+  cart.forEach((cartItem) => {
+    if (cartItem.productId === productId) {
+      matchingProd = cartItem;
+    }
+  });
+
+  matchingProd.deliveryOptionId = deliveryOptionId;
+
+  saveToStorage();
+}

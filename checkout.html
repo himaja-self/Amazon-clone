@@ -35,7 +35,8 @@
         </div>
 
         <div class="checkout-header-middle-section">
-          Checkout (<a class="return-to-home-link" href="amazon.html">3 items</a
+          Checkout (<a class="return-to-home-link" href="amazon.html"
+            ><span class="no-of-checkout-items"></span></a
           >)
         </div>
 
@@ -85,6 +86,9 @@
         </div>
       </div>
     </div>
+    <!-- first load external libraries then use load from the project -->
+    <!-- <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script> -->
+    <!-- Problem with script tags is that it directly runs code on the page, which can lead to naming conflicts -->
     <script type="module" src="scripts/checkout.js"></script>
   </body>
 </html>
